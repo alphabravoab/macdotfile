@@ -1,0 +1,30 @@
+# install.conf.yaml
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+  - [sh pre-install.sh, Running pre installation script]
+  - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom forlders]
+  - [mkdir -p ~/.oh-my-zsh/custom/plugins, Creating oh-my-zsh custom plugins forlders]
+  - [if ! hash bundle 2>/dev/null; then gem install bundler; fi, Installing Bundler]
+  - [bundle install, Installing system gems from Gemfile]
+  - [brew bundle, Installing Homebrew formulas from Brewfile]
+  - [if ! hash yo 2>/dev/null; then npm install -g yo; fi, Installing Yeoman]
+  - [if ! hash eslint 2>/dev/null; then npm install -g eslint; fi, Installing ESLint]
+  - [if ! hash ncu 2>/dev/null; then npm install -g npm-check-updates; fi, Installing npm-check-updates]
+
+- link:
+    # Shell stuff
+    ~/.zshrc: shell/.zshrc
+    # Linters
+    ~/.eslintrc: linters/.eslintrc
+    # Git
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore_global
+
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
