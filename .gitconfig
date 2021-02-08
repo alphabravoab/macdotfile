@@ -1,0 +1,8 @@
+[user]
+	name = Alphabravoab
+	email = 9051543+alphabravoab@users.noreply.github.com
+[core]
+	excludesfile = /Users/aab/.gitignore_global
+[alias]
+    # Generates a history tree
+    tree = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
