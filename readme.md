@@ -3,7 +3,7 @@ Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew
 xcode-select --install
 Clone repo into new hidden directory.
 # Use SSH (if set up)...
-git clone git@github.com:eieioxyz/Beyond-Dotfiles-in-100-Seconds.git ~/.dotfiles
+git clone git@github.com:alphabravoab/macdotfile.git ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
 git clone https://github.com/alphabravoab/macdotfile ~/.dotfiles
