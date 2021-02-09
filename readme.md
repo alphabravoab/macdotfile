@@ -8,8 +8,10 @@ git clone git@github.com:alphabravoab/macdotfile.git ~/.dotfiles
 # ...or use HTTPS and switch remotes later.
 git clone https://github.com/alphabravoab/macdotfile ~/.dotfiles
 Create symlinks in the Home directory to the real files in the repo.
-# There are better and less manual ways to do this;
-# investigate install scripts and bootstrapping tools.
+# Auto install (needs to be tested)
+just run ./install in this repo
+# investigate install scripts and bootstrapping tools 
+# (in case auto install doesn't work).
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
