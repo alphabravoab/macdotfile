@@ -18,12 +18,12 @@
 
 - link:
     # Shell stuff
-    ~/.zshrc: shell/.zshrc
+    ~/.zshrc: .zshrc
     # Linters
-    ~/.eslintrc: linters/.eslintrc
+    ~/.eslintrc: .eslintrc
     # Git
-    ~/.gitconfig: git/.gitconfig
-    ~/.gitignore: git/.gitignore_global
+    ~/.gitconfig: .gitconfig
+    ~/.gitignore: .gitignore_global
 
 
 - shell:
