@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-# Pack, ship and run any application as a lightweight container
 brew "docker", link: false
 brew "git"
 brew "htop"
@@ -17,6 +16,7 @@ cask "chrome-devtools"
 cask "franz"
 cask "google-chrome"
 cask "intellij-idea"
+cask "postman"
 cask "tunnelblick"
 cask "vagrant"
 cask "virtualbox"
