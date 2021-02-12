@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias lla="ls -a"
+alias dev="./workspace/magnet.me/./dev.sh"
+alias devDir="cd /Volumes/workspace/magnet.me"
+
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
