@@ -100,9 +100,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias lla="ls -a"
-alias dev="./workspace/magnet.me/./dev.sh"
-alias devDir="cd /Volumes/workspace/magnet.me"
+export PATH=/Users/aab/workspace/magnet.me:$PATH
+
+alias -g lla="ls -a"
+# alias -g devDown="~/workspace/magnet.me\dev.sh down"
+# alias -g devUp="~/workspace/magnet.me/dev.sh up"
+# alias -g devDir="cd /Volumes/workspace/magnet.me"
+
+
+
+# function dev() {
+#     "./workspace/magnet.me/dev.sh " $1
+# }
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
