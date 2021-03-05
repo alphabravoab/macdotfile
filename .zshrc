@@ -102,6 +102,19 @@ source $ZSH/oh-my-zsh.sh
 # prunes local branches that aren't on the remote. Don't forget to run a regular 'git fetch --prune' first
 alias gitPrune="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d"
 
+export PATH=/Users/aab/workspace/magnet.me:$PATH
+
+alias -g lla="ls -a"
+# alias -g devDown="~/workspace/magnet.me\dev.sh down"
+# alias -g devUp="~/workspace/magnet.me/dev.sh up"
+# alias -g devDir="cd /Volumes/workspace/magnet.me"
+
+
+
+# function dev() {
+#     "./workspace/magnet.me/dev.sh " $1
+# }
+
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
