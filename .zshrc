@@ -105,17 +105,11 @@ alias gitPrune="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git b
 export PATH=/Users/aab/workspace/magnet.me:$PATH
 
 alias -g lla="ls -a"
-# alias -g devDown="~/workspace/magnet.me\dev.sh down"
-# alias -g devUp="~/workspace/magnet.me/dev.sh up"
-# alias -g devDir="cd /Volumes/workspace/magnet.me"
-
-
-
-# function dev() {
-#     "./workspace/magnet.me/dev.sh " $1
-# }
-
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Magnet.me localdev completion (mmdev) -- start
+[ -s ~/.mmdev.sh ] && source ~/.mmdev.sh # DO NOT REMOVE THIS LINE WITHOUT REMOVING RELATED COMMENTS ABOVE AND BELOW
+# Magnet.me localdev completion (mmdev) -- end
