@@ -18,6 +18,7 @@ just run ```/install``` in this repo todo brew bundle seems to be failing
 `ln -s ~/.dotfiles/.gitconfig ~/.gitconfig` \
 `ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global`\
 Install Homebrew, followed by the software listed in the Brewfile.
+
 # These could also be in an install script.
 
 # Install Homebrew
