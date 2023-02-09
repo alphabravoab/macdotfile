@@ -108,7 +108,3 @@ export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# Magnet.me localdev completion (mmdev) -- start
-[ -s ~/.mmdev.sh ] && source ~/.mmdev.sh # DO NOT REMOVE THIS LINE WITHOUT REMOVING RELATED COMMENTS ABOVE AND BELOW
-# Magnet.me localdev completion (mmdev) -- end
